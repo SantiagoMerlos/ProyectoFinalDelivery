@@ -1,0 +1,184 @@
+.menuProductos{
+    text-align: center;
+    align-items: center;
+    margin-top: 15px;
+}
+
+.menuProductos__nombre{
+    color: chocolate;
+    font-family: 'Dancing Script', cursive;
+    &:hover{
+        transform: scale(1.3,1.3);
+        transition: 0.5s;
+        color: rgb(255, 255, 255);
+        border-radius: 30px;
+        background-color:$background_descripciones ;
+    }
+}
+
+.menuProductos__descripcion{
+    background-color:$background_descripciones;
+    color: azure;
+    padding: 5px;
+    width: 300px;
+    
+}
+.menuProductos__imagen{
+    background-color:$background_descripciones;
+    border-radius: 30px;
+    &:hover{
+        transform: scale(1.3,1.3);
+        transition: 0.5s;
+        color: $color_titulos;
+    }
+}
+
+
+
+/*Esta seccion de codigo es de como era antes eñ menu
+
+/* @media screen and (min-width: 600px ){
+
+    .productos{
+        color: $color_titulos;
+        display: grid;
+        grid-template-columns: 50% 48%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: 
+        "titulo titulo"
+        "vino cerveza"
+        "sinAlcohol alcohol" ;
+    }
+
+    .productos__titulo{
+        grid-area: titulo;
+    }
+
+    .producto__vino{
+        
+        border-radius: 30px;
+        grid-area: vino;
+    }
+
+    .producto__cerveza{
+        
+        border-radius: 30px;
+        grid-area: cerveza;
+    }
+
+    .producto__bebidacnalcohol{
+        
+        border-radius: 30px;
+        grid-area: alcohol;
+    }
+
+    .producto__bebidasinalcohol{
+        
+        border-radius: 30px;
+        grid-area: sinAlcohol;
+    }
+
+    .productopadre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        background-color: rgba(119, 136, 153, 0.322);
+    }
+
+    .listaProd{
+        text-decoration: none;
+        color:  #dce6dd9c;
+        font-family: "oswald";
+        margin: 10px;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.664);
+        /* background-color: darkorchid; 
+
+        &:hover{
+            transform: scale(1.3,1.3);
+            transition: 0.5s;
+            color: $color_titulos;
+        }
+    } 
+}
+
+
+@media screen and (max-width: 599px ){
+
+    .productos{
+        color: $color_titulos;
+        display: grid;
+        grid-template-columns: 50% 48%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: 
+        
+        "titulo titulo"
+        "vino vino" 
+        "cerveza cerveza" 
+        "sinAlcohol sinAlcohol"
+        "alcohol alcohol";
+    }
+
+    .productos__titulo{
+        grid-area: titulo;
+    }
+
+    .producto__vino{
+        
+        border-radius: 30px;
+        grid-area: vino;
+    }
+
+    .producto__cerveza{
+        
+        border-radius: 30px;
+        grid-area: cerveza;
+    }
+
+    .producto__bebidacnalcohol{
+        
+        border-radius: 30px;
+        grid-area: alcohol;
+    }
+
+    .producto__bebidasinalcohol{
+        
+        border-radius: 30px;
+        grid-area: sinAlcohol;
+    }
+
+    .productopadre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        background-color: rgba(119, 136, 153, 0.322);
+    }
+
+    .listaProd{
+        text-decoration: none;
+        color:  #dce6dd9c;
+        font-family: "oswald";
+        margin: 10px;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.664);
+        /* background-color: darkorchid; 
+
+        &:hover{
+            transform: scale(1.3,1.3);
+            transition: 0.5s;
+            color: $color_titulos;
+        }
+    } 
+}
+
+ */
+
+

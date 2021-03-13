@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tu bebida ya | Contacto</title>
+    <meta name="keywords" content=" BEBIDAS, DELIVERY, PREVIA, SALIDA, ALCOHOL, APERITIVOS, GASEOSAS, ENERGIZANTES">
+    <meta name="description" content=" Ofrecemos la opcion de poder contactarnos desde nuestra web y realizar consultas">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    
+</head>
+<body class="bodyBackgroundContacto">
+
+    <header class="header"> 
+        <a class="header__tituloPrincipal" href="index.html"><h1> Tu bebida ya</h1></a>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-toggleable-sm navbar-light">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <a class="navbar-brand" href="#"> <img class="wow animate__animated animate__backOutRight"  src="Imagenes/Logotipo.png" alt="Logo"  height="40"></a> <!-- con una img se incorpora imagen logo-->
+        <div id="navbarNavDropdown" class="navbar-collapse collapse">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Nosotros.html">Nosotros</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Productos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                        <ul class="navbarList">
+                            <li><a class="dropdown-item" href="Productos.html">Menu Productos</a></li>
+                            <li><a class="dropdown-item" href="Vinos.html">Vinos</a></li>
+                            <li><a class="dropdown-item" href="Cervezas.html">Cervezas</a></li>
+                            <li><a class="dropdown-item" href="BebidasBlancas.html">Bebidas blancas</a></li>
+                            <li><a class="dropdown-item" href="BebidasSinAlcohol.html">Bebidas sin alcohol</a></li>
+                        </ul>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Servicios.html">Servicios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contacto.html">Contacto</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="container sectionContacto">
+        <div class="row"> 
+            <div class="sectionContacto__propiedades col-md-6 col-sm-12">
+                
+                <h1 class="titulosGenerales">Contacto</h1>
+
+                <form action="nombre" method="get" class="sectionContacto__formulario">
+                    <label for="nombre" class="formularios__titulos"> Ingresa tu nombre: </label>
+                    <input type="text" placeholder="Nombre" class="form-control" >
+                        
+                    <label for="apellido" class="formularios__titulos">Ingresa tu apellido: </label>
+                    <input type="text" placeholder="Apellido" class="form-control">
+        
+                    <label for="email" class="formularios__titulos">Ingresa tu email:</label>
+                    <input type="email" name="mail" placeholder="nombre@gmail.com" class="form-control"> 
+                        
+                    <label for="Tildar" class="formularios__titulos">Acepto recibir ofertas</label>
+                    <input type="checkbox" class="form-check-input">
+
+                    <label for="" class="formularios__titulos ">Selecciona cada cuanto recibir ofertas</label>
+                    <select name="cantidad" class="form-select button form-control">
+                        <option value="">Una vez a la semana</option>
+                        <option value="">Dos veces a la semana</option>
+                        <option value="">Tres veces a la semana</option>
+                        <option value="">Diariamente</option>
+                    </select>
+        
+                    <label for="" class="formularios__titulos">Ingrese su consulta/comentario:</label>
+                        
+                    <textarea name="" id="" cols="50" rows="5" class="form-control"></textarea>
+
+                    <input type="button"value="Enviar formulario" class="btn btn-warning formulario__boton">
+                    <input type="reset"value="Limpiar formulario" class="btn btn-warning formulario__boton">
+                    <input type="button"value="Compartir formulario" class="btn btn-warning formulario__boton">
+                </form>
+            </div>
+
+            <section class="mimodal col-md-6 col-sm-12 ubicacion">
+                <div class="col sectionContacto__ubicacionMaps">
+                    <h1 class="titulosGenerales">Nuestra Ubicación</h1>
+                </div>
+                
+                <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary ubicacion__boton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Click aqui!
+                </button>
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content bg-dark">
+                        <div class="modal-header">
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <div class="col-md-6 col-sm-12">
+                                <h2><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d217954.9338907504!2d-64.33443097793783!3d-31.399083972440742!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9432985f478f5b69%3A0xb0a24f9a5366b092!2zQ8OzcmRvYmE!5e0!3m2!1ses-419!2sar!4v1609201452014!5m2!1ses-419!2sar" height="250" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe></h2>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                
+            </section>
+
+        </div>
+    </section>
+    <div class="redes">
+        <a href="https://www.facebook.com/" class="redes__facebook ">
+            <i class="fab fa-facebook"></i>
+        </a>
+        <a href="https://www.instagram.com/" class="redes__instagram"><i class="fab fa-instagram"></i>
+        </a>
+        <a href="https://api.whatsapp.com/send?phone=543562525210&text=Hola!%20Quisiera%20m%C3%A1s%20informaci%C3%B3n%20sobre%20un%20sitio%20web." class="redes__wpp">
+            <i class="fab fa-whatsapp"></i>
+        </a>s
+    </div>
+        <script src="js/wow.min.js"></script>
+        <script>
+            new WOW().init();
+        </script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js" integrity="sha384-q2kxQ16AaE6UbzuKqyBE9/u/KzioAlnx2maXQHiDX9d4/zp8Ok3f+M7DPm+Ib6IU" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-pQQkAEnwaBkjpqZ8RU1fF1AKtTcHJwFl3pblpTlHXybJjHpMYo79HY3hIi4NKxyj" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+</body>
+</html>

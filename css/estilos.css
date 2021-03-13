@@ -1,0 +1,543 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@350&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Mono&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anton&family=Coda+Caption:wght@800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/*Los distintos background de todo el proyecto*/
+.bodyBackgroundIndex {
+  background-image: url(Imagenes/fondoIndex.jpg);
+  background-size: cover;
+}
+
+.bodybackgroundNosotros {
+  background-image: url(Imagenes/fondoNosotros.jpg);
+  background-size: cover;
+}
+
+.bodyBackgroundContacto {
+  background-image: url(Imagenes/fondoContacto.jpg);
+  background-size: cover;
+}
+
+.bodybackgroundProductos {
+  background-image: url(Imagenes/opcion1a.jpg);
+  background-size: cover;
+}
+
+.bodybackgroundProd {
+  background-image: url(Imagenes/fondoMenuProductos.jpg);
+  background-size: cover;
+}
+
+.bodybackgroundServicios {
+  background-image: url(Imagenes/fondoServicios.jpg);
+  background-size: cover;
+}
+
+/*Header de todas las secciones*/
+.header {
+  background-image: url(Imagenes/Fondo.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 60px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+.header .header__tituloPrincipal {
+  width: 100%;
+  font-size: 35px;
+  font-weight: bold;
+  color: goldenrod;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-decoration: none;
+  text-decoration: none;
+}
+.header .header__tituloPrincipal:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.5s;
+}
+
+/*barra de navegacion*/
+.navbar-expand-lg .navbar-collapse {
+  justify-content: flex-end;
+  margin-right: 5%;
+}
+
+.navbar {
+  background-color: #756752;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+  color: #ccca64;
+}
+
+.navbar-collapse .collapse {
+  justify-content: flex-end;
+}
+
+.navbarList {
+  list-style: none;
+  background-color: rgba(194, 153, 64, 0.74);
+}
+.navbarList .dropdown-item:hover {
+  background-color: #9e640c;
+  color: cornsilk;
+}
+
+/*Partes especificas del index*/
+.MensajeBienvenida {
+  display: flex;
+  height: 700px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  /* background-color: rgba(119, 136, 153, 0.164); */
+}
+.MensajeBienvenida .MensajeBienvenida__NombreEmpresa {
+  display: flex;
+  background-color: rgba(22, 21, 21, 0.61);
+  justify-content: center;
+  align-items: center;
+  width: 250px;
+  height: 300px;
+}
+
+.Cajatitulo__tituloBienvenida {
+  font-size: 50px;
+  color: rgba(190, 150, 48, 0.925);
+  font-weight: bold;
+  font-family: "Anton", sans-serif;
+  text-align: center;
+}
+.Cajatitulo__tituloBienvenida:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.5s;
+}
+
+/*Titulos dentro de las diferentes secciones*/
+.titulosGenerales {
+  font-size: medium;
+  font-weight: bold;
+  width: 80%;
+  margin: 0 20px 20px 20px;
+  font-size: 30px;
+  padding-top: 20px;
+  color: chocolate;
+}
+
+/*Seccion Nosotros*/
+.SectionNosotros__descripcion, .SectionServicios__descripcion {
+  background-color: rgba(143, 138, 148, 0.795);
+  color: azure;
+  padding: 2px;
+}
+
+.cardBackground {
+  background-color: rgba(143, 138, 148, 0.795);
+}
+
+.card-img, .card-img-bottom, .card-img-topp {
+  width: 60px;
+  margin-left: 33%;
+  margin-top: 5px;
+}
+
+.botonCarrusel {
+  border-radius: 15px;
+  height: 50px;
+  width: 30px;
+  margin-top: 30%;
+  background-color: rgba(252, 252, 252, 0);
+}
+.botonCarrusel:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.5s;
+  background-color: rgba(243, 170, 60, 0.507);
+}
+
+.descripcionIntegrantes {
+  width: 50%;
+  background-color: #ffffffaf;
+  border-radius: 15px;
+}
+
+/* Seccion Productos */
+/*Menu Productos*/
+.menuProductos {
+  text-align: center;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.menuProductos__nombre {
+  color: chocolate;
+  font-family: "Dancing Script", cursive;
+}
+.menuProductos__nombre:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.5s;
+  color: white;
+  border-radius: 30px;
+  background-color: rgba(143, 138, 148, 0.795);
+}
+
+.menuProductos__descripcion {
+  background-color: rgba(143, 138, 148, 0.795);
+  color: azure;
+  padding: 5px;
+  width: 300px;
+}
+
+.menuProductos__imagen {
+  background-color: rgba(143, 138, 148, 0.795);
+  border-radius: 30px;
+}
+.menuProductos__imagen:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.5s;
+  color: chocolate;
+}
+
+/*Esta seccion de codigo es de como era antes eñ menu
+
+/* @media screen and (min-width: 600px ){
+
+    .productos{
+        color: $color_titulos;
+        display: grid;
+        grid-template-columns: 50% 48%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: 
+        "titulo titulo"
+        "vino cerveza"
+        "sinAlcohol alcohol" ;
+    }
+
+    .productos__titulo{
+        grid-area: titulo;
+    }
+
+    .producto__vino{
+
+        border-radius: 30px;
+        grid-area: vino;
+    }
+
+    .producto__cerveza{
+
+        border-radius: 30px;
+        grid-area: cerveza;
+    }
+
+    .producto__bebidacnalcohol{
+
+        border-radius: 30px;
+        grid-area: alcohol;
+    }
+
+    .producto__bebidasinalcohol{
+
+        border-radius: 30px;
+        grid-area: sinAlcohol;
+    }
+
+    .productopadre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        background-color: rgba(119, 136, 153, 0.322);
+    }
+
+    .listaProd{
+        text-decoration: none;
+        color:  #dce6dd9c;
+        font-family: "oswald";
+        margin: 10px;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.664);
+        /* background-color: darkorchid; 
+
+        &:hover{
+            transform: scale(1.3,1.3);
+            transition: 0.5s;
+            color: $color_titulos;
+        }
+    } 
+}
+
+
+@media screen and (max-width: 599px ){
+
+    .productos{
+        color: $color_titulos;
+        display: grid;
+        grid-template-columns: 50% 48%;
+        grid-column-gap: 10px;
+        grid-row-gap: 10px;
+        grid-template-areas: 
+
+        "titulo titulo"
+        "vino vino" 
+        "cerveza cerveza" 
+        "sinAlcohol sinAlcohol"
+        "alcohol alcohol";
+    }
+
+    .productos__titulo{
+        grid-area: titulo;
+    }
+
+    .producto__vino{
+
+        border-radius: 30px;
+        grid-area: vino;
+    }
+
+    .producto__cerveza{
+
+        border-radius: 30px;
+        grid-area: cerveza;
+    }
+
+    .producto__bebidacnalcohol{
+
+        border-radius: 30px;
+        grid-area: alcohol;
+    }
+
+    .producto__bebidasinalcohol{
+
+        border-radius: 30px;
+        grid-area: sinAlcohol;
+    }
+
+    .productopadre{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding: 20px;
+        background-color: rgba(119, 136, 153, 0.322);
+    }
+
+    .listaProd{
+        text-decoration: none;
+        color:  #dce6dd9c;
+        font-family: "oswald";
+        margin: 10px;
+        font-size: 25px;
+        background-color: rgba(0, 0, 0, 0.664);
+        /* background-color: darkorchid; 
+
+        &:hover{
+            transform: scale(1.3,1.3);
+            transition: 0.5s;
+            color: $color_titulos;
+        }
+    } 
+}
+
+ */
+/*Seccion Vinos-cervezas-bebidas Blancas- Bebidas sin Alcohol*/
+.card-titlee {
+  color: #dce6dd9c;
+  font-size: 25px;
+  background-color: rgba(0, 0, 0, 0.664);
+  font-family: "IBM Plex Mono", monospace;
+  text-align: center;
+}
+
+.card-bodyy {
+  margin: 20px;
+  background-color: rgba(119, 136, 153, 0.493);
+  /*background-color: rgba(209, 185, 80, 0.548);*/
+  text-align: center;
+}
+
+.cardd {
+  background-color: rgba(119, 136, 153, 0.493);
+}
+
+.btnDescripcion {
+  color: black;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+.btnDescripcion:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.5s;
+}
+
+.card-textt {
+  color: white;
+}
+
+/*Seccion Servicios*/
+.SectionServicios__metodoPago {
+  font-size: large;
+  font-weight: bold;
+  font-family: "Times New Roman", Times, serif;
+  color: #0a0a0a;
+}
+
+/*Seccion Contacto*/
+.sectionContacto .sectionContacto__propiedades {
+  margin-bottom: 20px;
+  /*Para despegar un poco el titulo siguiente cuando esta en modo mobile*/
+}
+.sectionContacto .sectionContacto__formulario {
+  color: #ffffff;
+}
+.sectionContacto .sectionContacto__formulario .formularios__titulos {
+  width: 90%;
+  margin: 5px 0 5px 0;
+  font-weight: bold;
+}
+.sectionContacto .sectionContacto__formulario .formulario__boton {
+  margin-left: 10px;
+  margin-top: 10px;
+}
+.sectionContacto .sectionContacto__formulario .form-control {
+  background-color: #ffffffb7;
+}
+.sectionContacto .sectionContacto__ubicacionMaps {
+  margin-top: 8px;
+}
+
+.ubicacion__boton {
+  margin-left: 25px;
+  margin-bottom: 25px;
+  background-color: #f3e73c;
+  border-color: #3294cd;
+  color: black;
+}
+.ubicacion__boton:hover {
+  transform: scale(1.3, 1.3);
+  transition: 0.5s;
+  background-color: #ffc10770;
+  color: #ffffff;
+}
+
+/*REDES*/
+@media screen and (min-width: 600px) {
+  .redes .redes__facebook {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 30px;
+    right: 40px;
+    text-align: center;
+    background-color: rgba(36, 36, 124, 0.527);
+    color: blanchedalmond;
+    font-size: 30px;
+    z-index: 1000;
+  }
+  .redes .redes__facebook:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.5s;
+    background-color: rgba(42, 120, 165, 0.61);
+  }
+  .redes .redes__instagram {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 80px;
+    right: 40px;
+    text-align: center;
+    background-color: rgba(36, 36, 124, 0.527);
+    color: blanchedalmond;
+    font-size: 30px;
+    z-index: 1000;
+  }
+  .redes .redes__instagram:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.5s;
+    background-color: rgba(42, 120, 165, 0.61);
+    color: #f32121;
+  }
+  .redes .redes__wpp {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 130px;
+    right: 40px;
+    text-align: center;
+    background-color: rgba(36, 36, 124, 0.527);
+    color: blanchedalmond;
+    font-size: 30px;
+    z-index: 1000;
+  }
+  .redes .redes__wpp:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.5s;
+    background-color: rgba(42, 120, 165, 0.61);
+    color: #0cb10c;
+  }
+}
+@media screen and (max-width: 599px) {
+  .redes .redes__facebook {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 30px;
+    right: 1px;
+    text-align: center;
+    background-color: rgba(36, 36, 124, 0.527);
+    color: blanchedalmond;
+    font-size: 30px;
+    z-index: 1000;
+  }
+  .redes .redes__facebook:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.5s;
+    background-color: #3b5998;
+  }
+  .redes .redes__instagram {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 80px;
+    right: 1px;
+    text-align: center;
+    background-color: rgba(36, 36, 124, 0.527);
+    color: blanchedalmond;
+    font-size: 30px;
+    z-index: 1000;
+  }
+  .redes .redes__instagram:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.5s;
+    background-color: rgba(42, 120, 165, 0.61);
+    color: #f32121;
+  }
+  .redes .redes__wpp {
+    position: fixed;
+    width: 45px;
+    height: 45px;
+    bottom: 130px;
+    right: 1px;
+    text-align: center;
+    background-color: rgba(36, 36, 124, 0.527);
+    color: blanchedalmond;
+    font-size: 30px;
+    z-index: 1000;
+  }
+  .redes .redes__wpp:hover {
+    transform: scale(1.3, 1.3);
+    transition: 0.5s;
+    background-color: rgba(42, 120, 165, 0.61);
+    color: #0cb10c;
+  }
+}
